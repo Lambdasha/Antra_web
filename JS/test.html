@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let salaries = {
+            John: 100,
+            Ann:  160,
+            Pete: 130
+          };
+          
+          let sum = 0;
+          for (let person in salaries) {
+            if (salaries.hasOwnProperty(person)) {
+              sum += salaries[person];
+            }
+          }
+          
+          console.log(sum);
+    </script>
+
+    <script>
+      function multiplyNumeric(obj) {
+        for (let key in obj) {
+          if (typeof obj[key] === 'number') {
+            obj[key] *= 2;
+          }
+        }
+      }
+    let menu = {
+      width: 200,
+      height: 300,
+      title: "My menu"
+    };
+    multiplyNumeric(menu); 
+    console.log(menu);
+    </script>
+
+    <script>
+      function checkEmailId(str) {
+        const s = String(str).toLowerCase();
+        const atPos  = s.indexOf('@');
+        const dotPos = s.indexOf('.');
+        if ((atPos > -1 ) && (dotPos > -1) && (atPos+ 1 < dotPos)) return true 
+        else return false;
+      }
+      console.log(checkEmailId("alice@example.com"));
+    </script>
+
+
+    <script>
+      function truncate(str, maxlength) {
+        if (str.length <= maxlength) {
+          return str;
+        }
+        return str.slice(0, maxlength - 1) + '…';
+      }
+      console.log(truncate("What I'd like to tell on this topic is:", 20));
+      console.log(truncate("Hi everyone!", 20));
+    </script>
+
+    <script>
+      let arr = ["James", "Brennie"];
+      arr.push("Robert");
+      console.log(arr);
+      let mid = Math.floor(arr.length / 2);
+      arr[mid] = "Calvin";
+      console.log(arr);
+      arr.shift();
+      console.log(arr);
+      arr.unshift("Rose", "Regal");
+      console.log(arr);
+    </script>
+
+    
+</body>
+</html>
