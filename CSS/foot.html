@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Antra Footer Example</title>
+  <style>
+    /* Base reset */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    /* Footer wrapper */
+    footer {
+      background-color: #222;
+      color: #ddd;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    /* Top sections */
+    .footer-sections {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      gap: 20px;
+    }
+    .footer-sections section {
+      flex: 1;
+      min-width: 200px;
+    }
+    .footer-sections h3 {
+      color: #fff;
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+
+    /* Corporate Office */
+    .office address {
+      font-style: normal;
+      line-height: 1.6;
+    }
+    .office a { color: #ddd; }
+
+    /* Menus */
+    .footer-sections ul li {
+      margin-bottom: 8px;
+      border-bottom: 1px solid #444;
+      padding-bottom: 6px;
+    }
+    .footer-sections ul li:last-child {
+      border-bottom: none;
+    }
+    .footer-sections ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Locations */
+    .locations img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 15px;
+      border: 1px solid #444;
+    }
+
+    /* Bottom bar */
+    .footer-bottom {
+      background-color: #000;
+      color: #666;
+      font-size: 13px;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .social-icons a {
+      margin-left: 12px;
+      display: inline-block;
+    }
+    .social-icons img {
+      width: 20px;
+      height: 20px;
+      filter: brightness(0) invert(1);
+    }
+  </style>
+</head>
+<body>
+
+  <footer>
+    <div class="footer-sections">
+
+      <!-- Corporate Office -->
+      <section class="office">
+        <h3>Corporate Office:</h3>
+        <address>
+          21355 Ridgetop Circle<br>
+          Suite #300<br>
+          Dulles, VA 20166<br>
+          Ph: 703-994-4545<br>
+          Email: <a href="mailto:info@antra.net">info@antra.net</a>
+        </address>
+      </section>
+
+      <!-- Services -->
+      <section class="services">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#">Technology Services</a></li>
+          <li><a href="#">Business Advisory Services</a></li>
+          <li><a href="#">Professional Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </section>
+
+      <!-- Resources -->
+      <section class="resources">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#">Case Studies</a></li>
+          <li><a href="#">White Papers</a></li>
+          <li><a href="#">Technology Resources</a></li>
+          <li><a href="#">Top Technology Trends 2017</a></li>
+          <li><a href="#">Agile Transformations</a></li>
+          <li><a href="#">Web &amp; Mobile Application Development</a></li>
+        </ul>
+      </section>
+
+      <!-- Locations & FB Like Box -->
+      <section class="locations">
+        <h3>Our Locations</h3>
+        <img src="map.png" alt="Our global offices map">
+
+
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <p>© 2017 Antra, Inc. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="#"><img src="facebook.png"  alt="Facebook"></a>
+        <a href="#"><img src="twitter.png"  alt="Twitter"></a>
+        <a href="#"><img src="Linkedin.png"  alt="LinkedIn"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Facebook SDK (required for the Page Plugin) -->
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0">
+  </script>
+
+</body>
+</html>
